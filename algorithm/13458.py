@@ -20,4 +20,3 @@ for i in range(N):
         else:
             result += div
 print(result)
-
