@@ -1,0 +1,21 @@
+# 실습 8-3
+atuple = 10,20,30,40,50
+alist=['A','B','C']
+a,b,c,d,e = atuple
+print(a,b,c,d,e)
+x,y,z = alist
+print(x,y,z)
+
+# 회원가입 여부 확인하기
+members = (('choi',93), ('han',50), ('jung',92), ('kang',68), ('kim',80)
+           ('lee',90),('moon',65), ('na',100), ('park',75), ('song',75))
+
+search = input("검색할 아이디 입력 : ")
+idList = []
+for x in members:
+    idList.append(x[0])
+if search in idList:
+    print("가입한 회원입니다.")
+else:
+    print("회원이 아닙니다.")
+    

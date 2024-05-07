@@ -1,3 +1,4 @@
+# 평균 최대 최소 구하기
 """
 l = []
 check = 0
@@ -42,3 +43,39 @@ movie_rank.remove('스플릿')
 movie_rank.remove('배트맨')
 print(movie_rank)
 
+# 피이썬 실습 예제 1 - 스택
+fruit_box = []
+for _ in range(3):
+    fruit = input("과일을 입력하세요:")
+    fruit_box.append(fruit)
+print(fruit_box.pop()) # 그냥 pop으로 작성시 해당 주소가 나오게 됩니다
+print(fruit_box.pop())
+print(fruit_box.pop())
+
+# 파이썬 실습 예제 2 - 친구 관리 프로그램
+friend_lst = []
+while True:
+    print("1. 친구 리스트 출력")
+    print("2. 친구추가")
+    print("3. 친구삭제")
+    print("4. 이름변경")
+    print("9. 종료")
+    option = int(input("메뉴를 선택하시오: "))
+    if option == 1:
+        print(friend_lst)
+    elif option == 2:
+        name = input("이름을 입력하시오: ")
+        friend_lst.append(name)
+    elif option == 3:
+        del_name = input("삭제하고 싶은 이름을 입력하시오: ")
+        friend_lst.remove(del_name)
+    elif option == 4:
+        old_name = input("변경하고 싶은 이름을 입력하시오: ")
+        new_name = input("새로운 이름을 입력하시오: ")
+        for i in range(len(friend_lst)):
+            if friend_lst[i] == old_name:
+                friend_lst[i] = new_name
+                break
+    else:
+        break
+        
