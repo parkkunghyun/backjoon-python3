@@ -19,3 +19,25 @@ if search in idList:
 else:
     print("회원이 아닙니다.")
     
+
+# 8-5
+memberId = ''
+num = 0
+for x,y in members:
+    if y > num:
+        memberId = x
+        num = y
+print("만족도 점수가 가장 높은 회원은 %s, 점수는 %d입니다.", %(memberId, num))
+
+# 딕셔너리
+adic = {'a': 90, 'b':70, 'c':60, 'd':70}
+bdic = {}
+type(adic)
+type(bdic)
+
+adic['b'] = 80
+adic
+adic['f'] = 100
+del adic['f']
+adic
+
